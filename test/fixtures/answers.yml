@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  complaint: one
+  actor: one
+  description: MyText
+
+two:
+  complaint: two
+  actor: two
+  description: MyText

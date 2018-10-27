@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  goal: one
+  material_type: one
+  location: MyString
+
+two:
+  goal: two
+  material_type: two
+  location: MyString

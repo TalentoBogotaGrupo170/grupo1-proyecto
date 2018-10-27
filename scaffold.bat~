@@ -1,0 +1,13 @@
+rails g scaffold IdentType name:string
+rails g scaffold ActorType name:string
+rails g scaffold Degree actor_type:references name:string
+rails g scaffold Goal degree:references validity:integer actor_type:references startdate:date enddate:date name:string weight:decimal fulfillment:decimal
+rails g scaffold GoalAttainment degree:references validity:integer goal:references actor_type:references attainment:integer startdate:date enddate:date name:string weight:decimal fulfillment:decimal
+rails g scaffold Actor ident:decimal ident_type:references actor_type:references surname:string secsurname:string firstname:string secondname:string birthdate:date degree:references
+rails g scaffold ActorGoal actor:references validity:integer goal:references actor_type:references startdate:date enddate:date score:integer
+rails g scaffold ActorAttainGoal validity:integer goal:references actor:references actor_goal:references actor_type:references attainment:integer startdate:date enddate:date score:integer
+rails g scaffold ActorRelationship actor:references actor2:integer
+rails g scaffold MaterialTYpe name:string
+rails g scaffold MaterialGoal goal:references material_type:references location:string
+rails g scaffold Complaint actor:references description:text
+rails g scaffold Answer complaint:references actor:references description:text

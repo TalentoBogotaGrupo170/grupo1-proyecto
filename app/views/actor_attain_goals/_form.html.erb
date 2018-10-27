@@ -1,0 +1,62 @@
+<%= form_with(model: actor_attain_goal, local: true) do |form| %>
+  <% if actor_attain_goal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(actor_attain_goal.errors.count, "error") %> prohibited this actor_attain_goal from being saved:</h2>
+
+      <ul>
+      <% actor_attain_goal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :validity %>
+    <%= form.number_field :validity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :goal_id %>
+    <%= form.text_field :goal_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :actor_id %>
+    <%= form.text_field :actor_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :actor_goal_id %>
+    <%= form.text_field :actor_goal_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :actor_type_id %>
+    <%= form.text_field :actor_type_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :attainment %>
+    <%= form.number_field :attainment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :startdate %>
+    <%= form.date_select :startdate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :enddate %>
+    <%= form.date_select :enddate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :score %>
+    <%= form.number_field :score %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

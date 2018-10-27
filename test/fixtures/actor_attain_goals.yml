@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  validity: 1
+  goal: one
+  actor: one
+  actor_goal: one
+  actor_type: one
+  attainment: 1
+  startdate: 2018-10-26
+  enddate: 2018-10-26
+  score: 1
+
+two:
+  validity: 1
+  goal: two
+  actor: two
+  actor_goal: two
+  actor_type: two
+  attainment: 1
+  startdate: 2018-10-26
+  enddate: 2018-10-26
+  score: 1

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ident: 9.99
+  ident_type: one
+  actor_type: one
+  surname: MyString
+  secsurname: MyString
+  firstname: MyString
+  secondname: MyString
+  birthdate: 2018-10-26
+  degree: one
+
+two:
+  ident: 9.99
+  ident_type: two
+  actor_type: two
+  surname: MyString
+  secsurname: MyString
+  firstname: MyString
+  secondname: MyString
+  birthdate: 2018-10-26
+  degree: two

@@ -1,0 +1,2 @@
+class Healthpromentity < ApplicationRecord
+end

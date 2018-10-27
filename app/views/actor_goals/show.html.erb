@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Actor:</strong>
+  <%= @actor_goal.actor %>
+</p>
+
+<p>
+  <strong>Validity:</strong>
+  <%= @actor_goal.validity %>
+</p>
+
+<p>
+  <strong>Goal:</strong>
+  <%= @actor_goal.goal %>
+</p>
+
+<p>
+  <strong>Actor type:</strong>
+  <%= @actor_goal.actor_type %>
+</p>
+
+<p>
+  <strong>Startdate:</strong>
+  <%= @actor_goal.startdate %>
+</p>
+
+<p>
+  <strong>Enddate:</strong>
+  <%= @actor_goal.enddate %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @actor_goal.score %>
+</p>
+
+<%= link_to 'Edit', edit_actor_goal_path(@actor_goal) %> |
+<%= link_to 'Back', actor_goals_path %>

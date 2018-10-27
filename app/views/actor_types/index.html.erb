@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Actor Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @actor_types.each do |actor_type| %>
+      <tr>
+        <td><%= actor_type.name %></td>
+        <td><%= link_to 'Show', actor_type %></td>
+        <td><%= link_to 'Edit', edit_actor_type_path(actor_type) %></td>
+        <td><%= link_to 'Destroy', actor_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Actor Type', new_actor_type_path %>

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Actor Attain Goals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Validity</th>
+      <th>Goal</th>
+      <th>Actor</th>
+      <th>Actor goal</th>
+      <th>Actor type</th>
+      <th>Attainment</th>
+      <th>Startdate</th>
+      <th>Enddate</th>
+      <th>Score</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @actor_attain_goals.each do |actor_attain_goal| %>
+      <tr>
+        <td><%= actor_attain_goal.validity %></td>
+        <td><%= actor_attain_goal.goal %></td>
+        <td><%= actor_attain_goal.actor %></td>
+        <td><%= actor_attain_goal.actor_goal %></td>
+        <td><%= actor_attain_goal.actor_type %></td>
+        <td><%= actor_attain_goal.attainment %></td>
+        <td><%= actor_attain_goal.startdate %></td>
+        <td><%= actor_attain_goal.enddate %></td>
+        <td><%= actor_attain_goal.score %></td>
+        <td><%= link_to 'Show', actor_attain_goal %></td>
+        <td><%= link_to 'Edit', edit_actor_attain_goal_path(actor_attain_goal) %></td>
+        <td><%= link_to 'Destroy', actor_attain_goal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Actor Attain Goal', new_actor_attain_goal_path %>

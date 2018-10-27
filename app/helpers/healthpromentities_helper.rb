@@ -1,0 +1,2 @@
+module HealthpromentitiesHelper
+end

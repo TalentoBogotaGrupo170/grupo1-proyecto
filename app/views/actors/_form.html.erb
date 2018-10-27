@@ -1,0 +1,62 @@
+<%= form_with(model: actor, local: true) do |form| %>
+  <% if actor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(actor.errors.count, "error") %> prohibited this actor from being saved:</h2>
+
+      <ul>
+      <% actor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ident %>
+    <%= form.text_field :ident %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ident_type_id %>
+    <%= form.text_field :ident_type_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :actor_type_id %>
+    <%= form.text_field :actor_type_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :surname %>
+    <%= form.text_field :surname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :secsurname %>
+    <%= form.text_field :secsurname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :firstname %>
+    <%= form.text_field :firstname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :secondname %>
+    <%= form.text_field :secondname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birthdate %>
+    <%= form.date_select :birthdate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :degree_id %>
+    <%= form.text_field :degree_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

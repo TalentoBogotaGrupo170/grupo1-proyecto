@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ident:</strong>
+  <%= @actor.ident %>
+</p>
+
+<p>
+  <strong>Ident type:</strong>
+  <%= @actor.ident_type %>
+</p>
+
+<p>
+  <strong>Actor type:</strong>
+  <%= @actor.actor_type %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @actor.surname %>
+</p>
+
+<p>
+  <strong>Secsurname:</strong>
+  <%= @actor.secsurname %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @actor.firstname %>
+</p>
+
+<p>
+  <strong>Secondname:</strong>
+  <%= @actor.secondname %>
+</p>
+
+<p>
+  <strong>Birthdate:</strong>
+  <%= @actor.birthdate %>
+</p>
+
+<p>
+  <strong>Degree:</strong>
+  <%= @actor.degree %>
+</p>
+
+<%= link_to 'Edit', edit_actor_path(@actor) %> |
+<%= link_to 'Back', actors_path %>

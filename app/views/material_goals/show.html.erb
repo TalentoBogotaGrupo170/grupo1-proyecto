@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Goal:</strong>
+  <%= @material_goal.goal %>
+</p>
+
+<p>
+  <strong>Material type:</strong>
+  <%= @material_goal.material_type %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @material_goal.location %>
+</p>
+
+<%= link_to 'Edit', edit_material_goal_path(@material_goal) %> |
+<%= link_to 'Back', material_goals_path %>

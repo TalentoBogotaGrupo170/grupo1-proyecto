@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Actor:</strong>
+  <%= @actor_relationship.actor %>
+</p>
+
+<p>
+  <strong>Actor2:</strong>
+  <%= @actor_relationship.actor2 %>
+</p>
+
+<%= link_to 'Edit', edit_actor_relationship_path(@actor_relationship) %> |
+<%= link_to 'Back', actor_relationships_path %>

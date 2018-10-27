@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  degree: one
+  validity: 1
+  actor_type: one
+  startdate: 2018-10-26
+  enddate: 2018-10-26
+  name: MyString
+  weight: 9.99
+  fulfillment: 9.99
+
+two:
+  degree: two
+  validity: 1
+  actor_type: two
+  startdate: 2018-10-26
+  enddate: 2018-10-26
+  name: MyString
+  weight: 9.99
+  fulfillment: 9.99

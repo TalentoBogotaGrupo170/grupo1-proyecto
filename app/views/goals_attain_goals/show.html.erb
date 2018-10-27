@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Validity:</strong>
+  <%= @goals_attain_goal.validity %>
+</p>
+
+<p>
+  <strong>Goal:</strong>
+  <%= @goals_attain_goal.goal %>
+</p>
+
+<p>
+  <strong>Actor:</strong>
+  <%= @goals_attain_goal.actor %>
+</p>
+
+<p>
+  <strong>Actor type:</strong>
+  <%= @goals_attain_goal.actor_type %>
+</p>
+
+<p>
+  <strong>Attainment:</strong>
+  <%= @goals_attain_goal.attainment %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @goals_attain_goal.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @goals_attain_goal.end_date %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @goals_attain_goal.score %>
+</p>
+
+<%= link_to 'Edit', edit_goals_attain_goal_path(@goals_attain_goal) %> |
+<%= link_to 'Back', goals_attain_goals_path %>
